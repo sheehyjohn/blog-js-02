@@ -39,10 +39,11 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
+            <Blog>{blogList}</Blog>
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
-            <Blog>{blogList}</Blog>
+           
             <Contact data={siteData.contact} />
         </Layout>
     )
@@ -97,7 +98,7 @@ const Wall = ({ data }) => {
             <p className="text-base lg:text-lg mt-4">{data.description}</p>
             <ScrollIntoView selector="#portfolio">
                 <Button
-                    title="SEE WORKS"
+                    title="see more"
                     type="button"
                     iconRight={<ArrowRight />}
                 />
