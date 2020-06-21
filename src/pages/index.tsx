@@ -39,7 +39,9 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
+            <Social></Social>
             <Blog>{blogList}</Blog>
+            
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
@@ -148,6 +150,19 @@ const About = ({ data }) => {
             <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     About
+                </h2>
+                <p className="mt-5 text-lg">{data}</p>
+            </div>
+        </div>
+    )
+}
+
+const Social = ({ data }) => {
+    return (
+        <div className="boxed">
+            <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
+                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                    Social
                 </h2>
                 <p className="mt-5 text-lg">{data}</p>
             </div>
