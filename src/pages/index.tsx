@@ -39,14 +39,17 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
         >
             <Wall data={siteData} />
             {siteData.about !== "" && <About data={siteData.about} />}
-            <Social></Social>
+            <ContactSmall data={data}></ContactSmall>
+
             <Blog>{blogList}</Blog>
             
             <div className="px-4 lg:px-0" id="portfolio">
                 {portfolioList}
             </div>
-           
+            <ContactEnd data={siteData.contact} />
+            {/*
             <Contact data={siteData.contact} />
+            */}
         </Layout>
     )
 }
@@ -147,7 +150,7 @@ const Wall = ({ data }) => {
 const About = ({ data }) => {
     return (
         <div className="boxed">
-            <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
+            <div className="px-4 py-20 text-center lg:py-20 lg:px-0">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     About
                 </h2>
@@ -156,29 +159,46 @@ const About = ({ data }) => {
         </div>
     )
 }
-
-const Social = ({ data }) => {
-    return (
-        <div className="boxed">
-            <div className="px-4 py-20 text-center lg:py-40 lg:px-0">
-                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                    Social
-                </h2>
-                <p className="mt-5 text-lg">{data}</p>
-            </div>
-        </div>
-    )
-}
+ 
 
 const Blog = ({ children }) => {
     return (
         <div className="container mx-auto px-0">
-            <div className="pt-20 pb-10 text-center lg:pt-40 lg:pb-20">
+            <div className="pt-20 pb-10 text-center lg:pt-20 lg:pb-20">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Blog
                 </h2>
             </div>
             <div className="flex flex-wrap">{children}</div>
+        </div>
+    )
+}
+  
+const ContactSmall = ({ data }) => {
+    const hasContactForm = data.api_url
+    return (
+        <div className="container mx-auto">
+            <div className="pt-20 pb-10 lg:pt-20 lg:pb-20 text-center">
+                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                <ContactDescription data={data} />
+                </h2>
+            </div>
+            
+        </div>
+    )
+}
+
+const ContactEnd = ({ data }) => {
+    const hasContactForm = data.api_url
+    return (
+        <div className="container mx-auto">
+            <div className="pt-20 pb-10 lg:pt-20 lg:pb-20 text-center">
+                <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
+                Contact
+                </h2>
+                <ContactDescription data={data} />
+            </div>
+            
         </div>
     )
 }
@@ -191,19 +211,16 @@ const Contact = ({ data }) => {
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
                     Contact
                 </h2>
+                <ContactDescription data={data} />
             </div>
             <div className="flex flex-wrap pb-40">
-                {hasContactForm && (
-                    <div className="w-full lg:w-1/2 px-4 lg:pl-2 lg:pr-6">
-                        <Form api={data.api_url} />
-                    </div>
-                )}
+               
                 <div
                     className={`w-full ${
                         hasContactForm ? "lg:w-1/2" : "lg:w-2/3 mx-auto"
                     } px-6 pt-8`}
                 >
-                    <ContactDescription data={data} />
+                   
                 </div>
             </div>
         </div>

@@ -9,8 +9,9 @@ const siteMetadata = {
     twoColumnWall: true,
     introTag: `creative | frontEnd | conference `,
     description: `the voluntary and other interests of a stay at home dad`,
-    about:
-        "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
+    //about:
+    //    "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
+    about: "so much of our lives can be extended into the internet so in creating a page I'm really only creating the one place that all my accounts are listed, as the different services overlap to weave out the veen diagrams of composite avatars that we may be....",
     author: `@_akzhy`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
@@ -53,13 +54,18 @@ const siteMetadata = {
         },
     ],
     social: [
-        /*
+         
         {
             name: "Facebook",
             icon: "/images/Facebook.svg",
             url: "#",
         },
-        */
+         
+        {
+            name: "GitHub",
+            icon: "/images/Twitter.svg",
+            url: "#",
+        },
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
@@ -75,14 +81,34 @@ const siteMetadata = {
             icon: "/images/Youtube.svg",
             url: "#",
         },
+        {
+            name: "SoundCloud",
+            icon: "/images/Youtube.svg",
+            url: "#",
+        },
+        {
+            name: "Flickr",
+            icon: "/images/Youtube.svg",
+            url: "#",
+        },
+        {
+            name: "Patreon",                    //25% to fairy garden
+            icon: "/images/Youtube.svg",        //25% place will remain open to suggested payment
+            url: "#",
+        },
+        {
+            name: "Spotify",
+            icon: "/images/Youtube.svg",
+            url: "#",
+        },
     ],
     contact: {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+        description: ` `,
         mail: "sheehy.john@gmail.com",
-        phone: "000-000-0000",
-        address: "1234 \nLocation \nLocation",
+        phone: "086 021 1255",
+        address: "Cork \nMunster \nRepulic of Ireland \nEuropean Union",
     },
     disqus: "elemental-netlify-com",
 }
