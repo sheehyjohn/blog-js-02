@@ -1,5 +1,5 @@
 const siteMetadata = {
-    title: `Elemental`,
+    title: `people i technologii`,
     siteUrl: `http://localhost`,
     capitalizeTitleOnHome: false,
     logo: `/images/logo.png`,
@@ -7,8 +7,8 @@ const siteMetadata = {
     titleImage: `/images/wall.png`,
     ogImage: `/images/wall.png`,
     twoColumnWall: true,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
-    description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
+    introTag: `creative | frontEnd | conference `,
+    description: `the voluntary and other interests of a stay at home dad`,
     about:
         "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
     author: `@_akzhy`,
@@ -30,6 +30,10 @@ const siteMetadata = {
             url: "/blog",
         },
         {
+            name: "CODE",
+            url: "/code",
+        },
+        {
             name: "PORTFOLIO",
             url: "/portfolio",
         },
@@ -45,15 +49,17 @@ const siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental",
+            url: "https://github.com/sheehyjohn",
         },
     ],
     social: [
+        /*
         {
             name: "Facebook",
             icon: "/images/Facebook.svg",
             url: "#",
         },
+        */
         {
             name: "Twitter",
             icon: "/images/Twitter.svg",
@@ -74,7 +80,7 @@ const siteMetadata = {
         // leave empty ('') or false to hide form
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
-        mail: "hi@akzhy.com",
+        mail: "sheehy.john@gmail.com",
         phone: "000-000-0000",
         address: "1234 \nLocation \nLocation",
     },
