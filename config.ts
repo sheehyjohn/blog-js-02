@@ -8,11 +8,11 @@ const siteMetadata = {
     ogImage: `/images/wall.png`,
     twoColumnWall: true,
     introTag: `creative | frontEnd | conference `,
-    description: `the voluntary and other interests of a stay at home dad \nUNDER CONSTRUCTION 22nd June 2020`,
+    description: `UNDER CONSTRUCTION 22nd June 2020 ---- the voluntary and other interests of a stay at home dad `,
     //about:
     //    "Cras accumsan a lectus at tincidunt. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Phasellus elementum dapibus dictum. Mauris auctor quam nec est tincidunt hendrerit. Donec pulvinar lobortis mauris. Cras vulputate ullamcorper ligula a rhoncus. Nunc venenatis elementum ligula in semper. Mauris malesuada purus nunc, et ultricies leo aliquam ac. Ut sit amet nunc id magna accumsan hendrerit in eget metus.",
     about: "so much of our lives can be extended into the internet so in creating a page I'm really only creating the one place that all my accounts are listed, as the different services overlap to weave out the veen diagrams of composite avatars that we may be....",
-    author: `@_akzhy`,
+    author: `@sheehyjohn`,
     blogItemsPerPage: 10,
     portfolioItemsPerPage: 10,
     darkmode: true,
@@ -104,7 +104,7 @@ const siteMetadata = {
         description: ` `,
         mail: "sheehy.john@gmail.com",
         phone: "  (+353) 086 021 1255",
-        address: "Cork \nMunster \nRepulic of Ireland \nEuropean Union",
+        address: "Cork \nMunster \nRepublic of Ireland \nEuropean Union",
     },
     disqus: "elemental-netlify-com",
 }
