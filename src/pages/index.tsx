@@ -11,6 +11,7 @@ import ItemPortfolio from "../components/item-portfolio"
 import ItemBlog from "../components/item-blog"
 import { Form, Description as ContactDescription } from "../components/contact"
 import { IndexPageQuery } from "./__generated__/IndexPageQuery"
+import SocialLinks from "../utils/sociallinks"
 
 export default ({ data, location }: PageProps<IndexPageQuery>) => {
     const siteData = data.site.siteMetadata
@@ -47,9 +48,9 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
                 {portfolioList}
             </div>
             <ContactEnd data={siteData.contact} />
-            <Contact data={siteData.contact} />
+          
             {/*
-            
+              <Contact data={siteData.contact} />
             */}
         </Layout>
     )
@@ -156,8 +157,11 @@ const About = ({ data }) => {
                     About
                 </h2>
                 <p className="mt-5 text-lg">{data}</p>
+                <SocialLinks></SocialLinks>
             </div>
+           
         </div>
+
     )
 }
  

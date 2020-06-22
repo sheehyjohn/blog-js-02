@@ -175,9 +175,13 @@ const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = 
                         <p className="whitespace-pre ml-4">{data.address}</p>
                     </li>
                 )}
+                 
+                {/* 
                 <li>
                     <SocialLinks />
                 </li>
+                */}
+                
             </ul>
         </div>
     )

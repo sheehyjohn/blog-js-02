@@ -107,7 +107,7 @@ const siteMetadata = {
         api_url: "https://getform.io/f/f227a36e-096a-4c6a-9963-9f1918a85bb3",
         description: ` `,
         mail: "sheehy.john@gmail.com",
-        phone: "086 021 1255",
+        phone: "  (+353) 086 021 1255",
         address: "Cork \nMunster \nRepulic of Ireland \nEuropean Union",
     },
     disqus: "elemental-netlify-com",
