@@ -47,8 +47,9 @@ export default ({ data, location }: PageProps<IndexPageQuery>) => {
                 {portfolioList}
             </div>
             <ContactEnd data={siteData.contact} />
-            {/*
             <Contact data={siteData.contact} />
+            {/*
+            
             */}
         </Layout>
     )
@@ -194,9 +195,11 @@ const ContactEnd = ({ data }) => {
         <div className="container mx-auto">
             <div className="pt-20 pb-10 lg:pt-20 lg:pb-20 text-center">
                 <h2 className="text-color-1 font-black text-5xl lg:text-6xl">
-                Contact
-                </h2>
+                    Contact
+                </h2> 
+                <div className="centerDiv"> 
                 <ContactDescription data={data} />
+                </div>
             </div>
             
         </div>

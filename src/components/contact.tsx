@@ -142,7 +142,7 @@ const Form: React.FC<{ api: string }> = ({ api }) => {
 
 const Description: React.FC<{ data: ContactQuery_site_siteMetadata_contact }> = ({ data }) => {
     return (
-        <div>
+        <div className = "align-center">
             {data.description && (
                 <p className="text-color-default">{data.description}</p>
             )}
